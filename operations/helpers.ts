@@ -2,9 +2,8 @@ export const getNewLineTutorText = (code: string[], currentLine: number) => {
   let nextLineCode = code[currentLine + 1];
   if (nextLineCode) {
     return nextLineCode;
-  } else {
-    return 'Code complete!';
   }
+  return 'Code complete!';
 };
 export const getLineUpdates = (doneLines: number[], currentLine: number) => {
   return {
@@ -12,7 +11,6 @@ export const getLineUpdates = (doneLines: number[], currentLine: number) => {
     current: currentLine + 1,
   };
 };
-
 export const getUserDiffedTutorText = (
   code: string[],
   currentLine: number,

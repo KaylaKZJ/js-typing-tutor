@@ -1,4 +1,3 @@
-
 export const CODE = [
   [
     'const addNumbers = (a, b) => {',
